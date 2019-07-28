@@ -103,7 +103,7 @@ class Board(tk.Canvas):
     def draw_letter(self, x, y, letter):
         x = x * 100 + 50
         y = y * 100 + 50
-        self.create_text(x,y, text=letter)
+        self.create_text(x, y, font=("Purisa", 50), text=letter)
 
 def next_move(x, y):
     if boards[x][y].board_over:
